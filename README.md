@@ -85,7 +85,7 @@ Add `cmdscript`:
 ```json lines
 {
   //...
-  "cmdscript": "src/cmd/scripts.ts" // supports .js or .ts file
+  "cmdscript": "src/cmd/script.ts" // supports .js or .ts file
 }
 ```
 
