@@ -1,0 +1,47 @@
+{
+  "private": true,
+  "name": "@mkproject-code/cmdscript.js",
+  "version": "1.0.0",
+  "description": "Simple CLI command manager for NodeJS",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": "./dist/index.js",
+  "files": [
+    "dist/"
+  ],
+  "cmdscript": "test/script.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build",
+    "pub": "npm publish --access=public",
+    "test": "ts-node test/script.ts",
+    "testcs": "ts-node src/bin/cmdscript.ts"
+  },
+  "keywords": [
+    "cli",
+    "command",
+    "cmd",
+    "shell",
+    "script",
+    "node",
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MKProject-code/CmdScript.js.git"
+  },
+  "author": "Mat4B",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MKProject-code/CmdScript.js/issues"
+  },
+  "homepage": "https://github.com/MKProject-code/CmdScript.js#readme",
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "bin": {
+    "cs": "dist/src/bin/cmdscript.js"
+  }
+}
