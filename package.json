@@ -1,7 +1,6 @@
 {
-  "private": true,
   "name": "@mkproject-code/cmdscript.js",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "Simple CLI command manager for NodeJS",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
